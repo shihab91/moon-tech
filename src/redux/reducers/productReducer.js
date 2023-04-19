@@ -10,10 +10,10 @@ const productReducer = (state = initialState, action) => {
 
 	switch (action.type) {
 		case ADD_PRODUCT:
-			return {
-				...state,
-				products: [...state.products, action.payload],
-			}
+		return {
+			...state,
+			products: [...state.products, action.payload],
+		}
 		case REMOVE_PRODUCT:
 			return {
 				...state,

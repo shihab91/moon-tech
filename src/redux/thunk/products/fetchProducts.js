@@ -9,4 +9,5 @@ const loadProductData = () => {
 		}
 	}
 }
+
 export default loadProductData
