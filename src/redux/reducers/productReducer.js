@@ -15,10 +15,10 @@ const productReducer = (state = initialState, action) => {
 			products: [...state.products, action.payload],
 		}
 		case REMOVE_PRODUCT:
-			return {
-				...state,
-				products: state.products.filter(product => product._id !== action.payload),
-			}
+		return {
+			...state,
+			products: state.products.filter(product => product._id !== action.payload),
+		}
 		case ADD_TO_CART:
 			if (selectedProduct) {
 				const newCart = state.cart.filter(product => product._id !== selectedProduct._id)

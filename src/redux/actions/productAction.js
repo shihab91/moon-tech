@@ -5,7 +5,6 @@ export const addProduct = data => {
 		payload: data,
 	}
 }
-
 export const removeProduct = id => {
 	return {
 		type: REMOVE_PRODUCT,
